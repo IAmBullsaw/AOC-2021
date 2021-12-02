@@ -1,6 +1,7 @@
 #include <functional>
 #include "../shared/execution.h"
 #include "./testcases.h"
+#include "../shared/utils.h"
 
 int solutionLvl1(const std::string& puzzle, const std::map<std::string, int>& parameters) {
 

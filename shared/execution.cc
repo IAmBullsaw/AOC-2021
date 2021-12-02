@@ -1,5 +1,6 @@
 #include "./execution.h"
 #include <iostream>
+#include <iterator>
 #include <sstream>
 #include <functional>
 
@@ -10,15 +11,14 @@ void Execution::run(std::function<int(const std::string&, const std::map<std::st
 
 		std::ostringstream std_input;
 		std_input  << std::cin.rdbuf();
-		std::cin.clear();
 		std::string puzzle = std_input.str();
 
 
 		std::cout << "Solving puzzle..." << std::endl;
 		auto answerlvl1 = lvl1(puzzle, lvl1Parameters);
+		std::cout << "Answer\n" << "    Level 1: " << answerlvl1 << std::endl;
 		auto answerlvl2 = lvl2(puzzle, lvl2Parameters);
-		std::cout << "Answer\n" << "    Level 1: " << answerlvl1
-		<< "\n    Level 2: " << answerlvl2 << std::endl;
+		std::cout << "    Level 2: " << answerlvl2 << std::endl;
 
 	} else {
 		// to be able to automate
