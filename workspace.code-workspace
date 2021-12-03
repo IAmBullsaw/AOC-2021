@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "aocurl",
+			"path": "../../.aocurl/"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"bitset": "cpp"
+		}
+	}
+}
